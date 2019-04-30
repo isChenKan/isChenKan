@@ -1,0 +1,19 @@
+{
+  "name": "ischenkan",
+  "version": "1.0.0",
+  "description": "--- 这里是葵花养殖技术人员用来写一些技术总结的地方，因为女朋友叫做葵花养殖系主任，所以我就叫葵花养殖技术人员啦！🙈",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isChenKan/isChenKan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isChenKan/isChenKan/issues"
+  },
+  "homepage": "https://github.com/isChenKan/isChenKan#readme"
+}
