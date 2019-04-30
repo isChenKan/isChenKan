@@ -17,7 +17,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f https://${76b9d41105d20da2d21b7d01580f505e914389b1}@github.com/isChenKan/isChenKan.github.io.git master
+git push -f https://${access_token}@github.com/isChenKan/isChenKan.github.io.git master
 
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
