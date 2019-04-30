@@ -20,4 +20,5 @@ module.exports = {
 		],
 		sidebarDepth: 2,
 	},
+	plugins: ['@vuepress/pwa'],
 }
