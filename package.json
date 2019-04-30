@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/isChenKan/isChenKan/issues"
   },
-  "homepage": "https://github.com/isChenKan/isChenKan#readme"
+  "homepage": "https://github.com/isChenKan/isChenKan#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.11"
+  }
 }
