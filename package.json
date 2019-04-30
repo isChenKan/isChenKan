@@ -4,6 +4,8 @@
   "description": "--- 这里是葵花养殖技术人员用来写一些技术总结的地方，因为女朋友叫做葵花养殖系主任，所以我就叫葵花养殖技术人员啦！🙈",
   "main": "index.js",
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
