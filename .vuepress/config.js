@@ -3,6 +3,10 @@ module.exports = {
 	description: '前端技术博客',
 	// dest: './public', // 设置输出目录
 	base: '/', // 设置站点根路径
+	head: [
+		['link', { rel: 'icon', href: '/icon.ico' }],
+		['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+	],
 	markdown: {
 		lineNumbers: true
 	},

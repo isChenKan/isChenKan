@@ -14,7 +14,7 @@ create database xxx;
 ```
 创建数据库
 ```SQL
-source /Users/chenkan/create.sql;
+source /Users/username/create.sql;
 ```
 导入本地数据库
 ```SQL
