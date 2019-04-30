@@ -6,6 +6,7 @@ module.exports = {
 	head: [
 		['link', { rel: 'icon', href: '/icon.ico' }],
 		['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+		['link', { rel: 'manifest', href: '/site.webmanifest' }],
 	],
 	markdown: {
 		lineNumbers: true
@@ -20,5 +21,5 @@ module.exports = {
 		],
 		sidebarDepth: 2,
 	},
-	plugins: ['@vuepress/pwa'],
+	serviceWorker: true,
 }
