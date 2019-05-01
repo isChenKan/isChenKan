@@ -89,7 +89,9 @@ git push -f https://${token}@github.com/<USERNAME>/<USERNAME>.github.io.git mast
 ```bash
 git update-index --add --chmod=+x deploy.sh
 ```
-要不然你的travis后台还是会报错，（没权限）。
+要不然你的travis后台会报错，（没权限）。
+
+![image](./fail.png)
 
 最后再push你的代码就可以了，tranvis就会自动执行部署了。这里注意要强制push，以为它编译之后的仓库跟你本地的不一样了，直接`git push`是不行的，每次强制push就好了：
 ```bash
