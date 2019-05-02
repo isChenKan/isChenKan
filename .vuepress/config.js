@@ -16,6 +16,14 @@ module.exports = {
 			'/20190430-carousel/',
 			'/20190501-nvm/',
 		],
+		nav: [
+			{
+				text: '邮件',
+				items: [
+					{ text: '发个邮件给我', link: 'mailto: ischenkan@outlook.com' },
+				]
+			}
+		],
 		sidebarDepth: 2,
 	},
 	head: [
