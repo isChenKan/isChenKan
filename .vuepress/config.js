@@ -6,19 +6,38 @@ module.exports = {
 	themeConfig: {
 		sidebar: [
 			'/',
-			'/20190430-sort/',
-			'/20190430-tree/',
-			'/20190430-mysql/',
-			'/20190501-git/',
-			'/20190501-qa/',
-			'/20190501-loading/',
-			'/20190501-deploy/',
-			'/20190430-carousel/',
-			'/20190501-nvm/',
+			{
+				title: 'Node.js',
+				collapsable: false,
+				children: [
+					'/node-async/',
+					'/node-nvm/',
+				],
+			},
+			{
+				title: '前端相关',
+				collapsable: false,
+				children: [
+					'/fe-qa/',
+					'/fe-sort/',
+					'/fe-tree/',
+					'/fe-loading/',
+					'/fe-carousel/',
+				],
+			},
+			{
+				title: '其它',
+				collapsable: false,
+				children: [
+					'/other-deploy/',
+					'/other-git/',
+					'/other-mysql/',
+				],
+			},
 		],
 		nav: [
 			{
-				text: '邮件',
+				text: 'Contact',
 				items: [
 					{ text: '发个邮件给我', link: 'mailto: ischenkan@outlook.com' },
 				]
