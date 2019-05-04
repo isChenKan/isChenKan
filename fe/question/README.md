@@ -30,7 +30,7 @@ methods: {
 ```
 * 注意v-model绑定的data值必须符合要求，之前用了后端返回的ruleUser这个字段绑定v-model，结果它这个字段有时候居然是个null，然后我正常流程是这个v-model是个多选，内部有push操作，然后这个ruleUser有时候是个null，导致push报错，而且这个push操作是我自己做的也就算了，很好追踪，但是这个push是用element的el-select组件内部做的push，导致排查起来很麻烦，前端并没有检查出这个类型问题。只是vue warn报错了，但并不是很精确到代码的位置。TS：真香警告！
 
-## 开发中的那些坑坑
+## 开发中的那些小问题
 * `axios delete`携带参数，要放在一个包含data的对象里才行，不能像post那样直接传postData：
 ```js
 deletePageInfo: (postData) => {
