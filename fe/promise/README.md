@@ -41,6 +41,6 @@ callback把控制权交给第三方导致了信任问题，第三方代码可能
 之前我们使用callback，我们把回调函数传给了`$ajax`，是不值得信任的。而promise决议之后只负责通知（成功或拒绝），现在我们把回调传给promise的then来精确控制。
 
 ### 异常捕获
-另外，promise可以用catch来捕获一场，callback虽然可以用try catch来捕获异常，但是无法捕捉到异步的异常，所以相比来说，promise的机制更好。
+另外，promise可以用catch来捕获异常，callback虽然可以用try catch来捕获异常，但是无法捕捉到异步的异常，所以相比来说，promise的机制更好。
 
 记住：**promise只能决议一次，决议值只能有一个，决议之后无法改变。任何then中的回调也只会被调用一次**。
