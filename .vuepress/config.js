@@ -5,7 +5,7 @@ module.exports = {
 	base: '/', // 设置站点根路径
 	themeConfig: {
 		sidebar: [
-			'/',
+			'/index/',
 			{
 				title: 'Node.js',
 				collapsable: false,
@@ -50,6 +50,8 @@ module.exports = {
 		['link', { rel: 'icon', href: '/icon.ico' }],
 		['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
 		['link', { rel: 'manifest', href: '/site.webmanifest' }],
+		['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js' }],
+		['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/utils/Draggable.min.js' }],
 	],
 	markdown: {
 		lineNumbers: true
