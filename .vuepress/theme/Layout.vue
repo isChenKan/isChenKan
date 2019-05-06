@@ -137,6 +137,7 @@ export default {
   },
 
   mounted () {
+    this.isShowValine = this.$route.path !== '/'
     window.addEventListener('scroll', this.onScroll)
 
     // configure progress bar
