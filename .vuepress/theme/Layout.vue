@@ -52,7 +52,7 @@
       />
     </Page>
 
-    <Valine></Valine>
+    <Valine v-if="isShowValine"></Valine>
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
   </div>
@@ -75,8 +75,15 @@ export default {
   data () {
     return {
       isSidebarOpen: false,
-      swUpdateEvent: null
+      swUpdateEvent: null,
+      isShowValine: false,
     }
+  },
+
+  watch: {
+    $route(to, from) {
+			this.isShowValine = this.$route.path !== '/'
+		}
   },
 
   computed: {
