@@ -198,12 +198,11 @@ svg {
   line-height: 30px;
 }
 .home-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100px;
   height: 40px;
   margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
   border-radius: 5px;
   background: #ffda76;
   font-size: 14px;
