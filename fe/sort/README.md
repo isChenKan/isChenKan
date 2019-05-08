@@ -1,4 +1,4 @@
-# 几种排序算法的JavaScript实现
+# 几种排序算法的js实现
 
 ## 冒泡排序
 ```javascript

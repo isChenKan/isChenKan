@@ -19,6 +19,7 @@ module.exports = {
 				collapsable: false,
 				children: [
 					'/fe/promise/',
+					'/fe/es6/',
 					'/fe/question/',
 					'/fe/sort/',
 					'/fe/tree/',

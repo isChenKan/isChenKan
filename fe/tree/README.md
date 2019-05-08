@@ -1,4 +1,4 @@
-# 二叉查找树的JavaScript实现
+# 二叉查找树的js实现
 
 ## 定义
 二叉查找树（Binary Search Tree）是指一棵空树或者具有下列性质的二叉树：
