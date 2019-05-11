@@ -1,4 +1,4 @@
-# 纯CSS写个Google的加载动画
+# Google的加载动画（SVG）
 
 > svg写的Google常用的进度条和loading加载动画，可以直接复制拿去运行，也可以封装成一个组件，很实用。
 代码如下：

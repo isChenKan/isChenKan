@@ -20,12 +20,12 @@ module.exports = {
 				children: [
 					'/fe/promise/',
 					'/fe/prototype/',
+					'/fe/closure/',
 					'/fe/es6/',
 					'/fe/question/',
 					'/fe/sort/',
 					'/fe/tree/',
 					'/fe/loading/',
-					'/fe/carousel/',
 				],
 			},
 			{
