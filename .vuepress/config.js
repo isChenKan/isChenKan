@@ -4,6 +4,7 @@ module.exports = {
 	// dest: './public', // 设置输出目录
 	base: '/', // 设置站点根路径
 	themeConfig: {
+		// navbar: false,
 		sidebar: [
 			'/index/',
 			{

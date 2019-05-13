@@ -1,4 +1,4 @@
-# 别再被问倒了之：callback和promise？
+# JS基础之：callback和promise
 > 这里我不会过多的讨论它们具体的写法、API层面的东西，promise想必大家都会用，这里主要讨论的是API背后的原理。
 
 ## callback为什么不好

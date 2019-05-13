@@ -1,4 +1,4 @@
-# 使用nvm进行Node.js版本控制
+# 使用nvm进行Node版本控制
 
 ```bash
 # 安装指定版本
