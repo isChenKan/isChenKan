@@ -52,7 +52,7 @@
       />
     </Page>
 
-    <Valine v-if="isShowValine"></Valine>
+    <!-- <Valine v-if="isShowValine"></Valine> -->
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
   </div>
