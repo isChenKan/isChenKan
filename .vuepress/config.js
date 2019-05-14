@@ -23,6 +23,7 @@ module.exports = {
 					'/fe/prototype/',
 					'/fe/closure/',
 					'/fe/es6/',
+					'/fe/js/',
 					'/fe/question/',
 					'/fe/sort/',
 					'/fe/tree/',

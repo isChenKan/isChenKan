@@ -34,9 +34,10 @@ Father.prototype.sayName = function() {
 function Son(){
 	this.age = 20
 }
-// 每个构造函数(constructor)都有一个原型对象(prototype)
-// 原型对象都包含一个指向构造函数的指针
-// 而实例(instance)都包含一个指向原型对象的内部指针
+// 可以从上到下理解：
+//【构造函数constructor】每个构造函数(constructor)都有一个原型对象(prototype)
+//【原型对象prototype】原型对象都包含一个指向构造函数的指针
+//【实例instance】而实例(instance)都包含一个指向原型对象的内部指针
 
 // 所以Son继承Father的过程：
 // Son的原型对象指向了father的实例
@@ -120,7 +121,7 @@ class Son extends Father {
   }
 }
 ```
-子类必须在constructor方法中调用`super`方法（super指向父类的原型对象，super可以携带参数）。因为ES5的继承，实质是先创造子类的实例对象this，然后再将父类的方法添加到this上面（Father.call(this)）。**ES6的继承机制完全不同，实质是先将父类实例对象的属性和方法，加到this上面（所以必须先调用super方法），然后再用子类的构造函数修改this**。
+子类必须在constructor方法中调用`super`方法（super指向父类的原型对象，super可以携带参数）。因为ES5的继承，实质是先创造子类的实例对象this，然后再将父类的方法添加到this上面（Father.call(this)）。**ES6的继承机制完全不同，实质是先将父类实例对象的属性和方法加到this上面（所以必须先调用super方法），然后再用子类的构造函数修改this**。
 
 关于__proto__属性：
 * 子类的__proto__属性，表示构造函数的继承，总是指向父类。
