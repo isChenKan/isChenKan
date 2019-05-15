@@ -38,7 +38,7 @@ promise就像餐厅取餐叫号一样，你的这个号就是给你的承诺，�
 ### promise如何解决callback的信任问题
 callback把控制权交给第三方导致了信任问题，第三方代码可能过早或过晚的调用我们传给它的回调函数，而promise就不用担心这个问题，promise总是异步的。而且promise的回调调用次数是一次，不会出现多次调用回调函数的情况。
 
-之前我们使用callback，我们把回调函数传给了`$ajax`，是不值得信任的。而promise决议之后只负责通知（成功或拒绝），现在我们把回调传给promise的then来精确控制。
+之前我们使用callback，我们把回调函数传给了`$ajax`，是不值得信任的。而**promise决议之后只负责通知（成功或拒绝），现在我们把回调传给promise的then来精确控制。**
 
 ### 异常捕获
 另外，promise可以用catch来捕获异常，callback虽然可以用try catch来捕获异常，但是无法捕捉到异步的异常，所以相比来说，promise的机制更好。

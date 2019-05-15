@@ -22,8 +22,15 @@ console.log(instance.age) // 20
 2. 将构造函数的作用域赋给新对象（因此Person里的`this`就指向了新对象）
 3. 执行构造函数中的代码（为这个新对象添加属性和方法）
 4. 返回新对象
+代码大概是这样的：
+```js
+let obj = {}
+obj.__proto__ = Person.prototype
+Person.call(obj)
+return obj
+```
 
-如果我们有两个构造函数，一个father，一个son：
+如果我们有两个构造函数，一个father，一个son，实现继承：
 ```js
 function Father() {
 	this.name = 'abc'
@@ -41,7 +48,7 @@ function Son(){
 
 // 所以Son继承Father的过程：
 // Son的原型对象指向了father的实例
-// 而father的实例包含了一个指向father的原型对象的指针
+// 而father的实例包含了一个指向father的原型对象的指针，Son就拥有了Father原型对象上的方法
 // father的原型对象又指向了构造函数Father
 Son.prototype = new Father()
 Son.prototype.sayAge = function() {

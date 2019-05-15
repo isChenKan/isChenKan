@@ -37,6 +37,7 @@ module.exports = {
 					'/other/deploy/',
 					'/other/git/',
 					'/other/mysql/',
+					'/other/snake/',
 				],
 			},
 		],
