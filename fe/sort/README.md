@@ -43,7 +43,7 @@ console.log(`Time spent: ${elapsed}ms`)
 // 给个参考数组方便看逻辑：
 // arr = [3, 1, 5, 4, 2]
 function selectSort(arr) {
-	let min = 0
+	let minIndex = 0
 	len = arr.length
 	for (let i = 0; i < arr.length - 1; i++) {
 		minIndex = i

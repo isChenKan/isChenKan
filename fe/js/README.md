@@ -116,3 +116,11 @@ foo(3)
 // [1, 2, 3]
 ```
 
+## 图片或者图表看板懒加载
+在滚动的时候判断图表有没有出现在视图范围内，如果是，就加载它：
+1. 通过`const clientHeight = document.documentElement.clientHeight`获取屏幕可视窗口高度。
+2. 通过`const offsetTop = element.offsetTop`获取元素相对于文档顶部的距离。
+3. 通过`const scrollTop = document.documentElement.scrollTop`获取浏览器窗口顶部与文档顶部之间的距离，也就是滚动条滚动的距离。
+最后：`isLoading = offsetTop - scrollTop < clientHeight`
+
+另外一个获取元素位置的方法：`getBoundingClientRect()`
