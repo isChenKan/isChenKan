@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # Git命令大全
 > 这里是平时自己记录的一些常用的git命令
 

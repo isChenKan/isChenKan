@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # Travis自动化部署VuePress到Github Pages
 > 本文旨在帮助你用vuepress构建自己的博客或者文档，然后让它运行在免费的Github Pages上面，并且通过Travis这个集成工具来在你每次git push代码的时候自动部署。这样你每次push完等一会儿就可以在线上看到刚刚写好的文档啦！体验还是很不错的～😎
 
@@ -84,14 +91,14 @@ git push -f https://${token}@github.com/<USERNAME>/<USERNAME>.github.io.git mast
 ```
 这里面这个`${token}`的名字就是那个，然后新建token的时候下面的勾记得全都要勾上，默认都是没有选的。然后就会生成token，记得马上复制它，然后去到travis里面，应该可以看到你的github仓库名字，点进去，选择旁边的设置，然后下面有一个Environment Variables，配置好你刚才复制的token就可以了，注意name是你刚刚起的token名字，然后Add就可以了：
 
-![An image](./travis.png)
+![An image](./images/travis.png)
 然后，你需要在命令行运行：
 ```bash
 git update-index --add --chmod=+x deploy.sh
 ```
 要不然你的travis后台会报错，（没权限）。每次都要执行这个命令！
 
-![image](./fail.png)
+![An image](./images/fail.png)
 
 ---
 最后再push你的代码就可以了，tranvis就会自动执行部署了。这里注意要强制push，以为它编译之后的仓库跟你本地的不一样了，直接`git push`是不行的，每次强制push就好了：

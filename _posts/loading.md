@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # Google的加载动画（SVG）
 
 > svg写的Google常用的进度条和loading加载动画，可以直接复制拿去运行，也可以封装成一个组件，很实用。

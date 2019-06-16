@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # 几种排序算法的JavaScript实现
 
 ## 算法稳定性
@@ -34,7 +41,7 @@ console.log(nums)
 console.log(`Time spent: ${elapsed}ms`)
 ```
 两万个数：
-![An image](./bubblesort1.png)
+![An image](./images/bubblesort1.png)
 两百万个数：
 电脑死机了...
 
@@ -72,7 +79,7 @@ console.log(nums)
 console.log(`Time spent: ${elapsed}ms`)
 ```
 两万个数：
-![An image](./selectsort.png)
+![An image](./images/selectsort.png)
 
 ## 插入排序
 ```javascript
@@ -110,7 +117,7 @@ console.log(nums)
 console.log(`Time spent: ${elapsed}ms`)
 ```
 两万个数：
-![An image](./insertsort.png)
+![An image](./images/insertsort.png)
 
 ## 希尔排序
 ```javascript
@@ -141,9 +148,9 @@ console.log(nums)
 console.log(`Time spent: ${elapsed}ms`)
 ```
 两万个数：
-![An image](./shellsort1.png)
+![An image](./images/shellsort1.png)
 两百万个数：
-![An image](./shellsort2.png)
+![An image](./images/shellsort2.png)
 
 ## 快速排序
 ```javascript
@@ -176,9 +183,9 @@ let end = new Date().getTime()
 let elapsed = end - start
 console.log(`Time spent: ${elapsed}ms`)
 ```
-![An image](./quicksort1.png)
+![An image](./images/quicksort1.png)
 2,000,000个数：
-![An image](./quicksort2.png)
+![An image](./images/quicksort2.png)
 
 ## Array.sort()
 
@@ -200,4 +207,4 @@ let elapsed = end - start
 console.log(`Time spent: ${elapsed}ms`)
 ```
 二百万个数：
-![An image](./arraysort.png)
+![An image](./images/arraysort.png)

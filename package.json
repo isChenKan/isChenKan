@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/isChenKan/isChenKan#readme",
   "devDependencies": {
-    "vuepress": "^0.14.11"
+    "@vuepress/theme-blog": "^1.1.0",
+    "vuepress": "^1.0.1",
+    "axios": "^0.18.1"
   },
   "dependencies": {
     "leancloud-storage": "^3.13.0",

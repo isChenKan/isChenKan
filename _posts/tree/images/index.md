@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # 二叉查找树的JavaScript实现
 
 ## 定义

@@ -1,3 +1,10 @@
+---
+date: 2019-6-16
+tags: JS基础
+author: 葵花养殖技术人员
+location: Beijing
+---
+
 # JS基础之：callback和promise
 > 这里我不会过多的讨论它们具体的写法、API层面的东西，promise想必大家都会用，这里主要讨论的是API背后的原理。
 
