@@ -110,25 +110,33 @@ module.exports = {
 	title: `🌻葵花养殖技术人员`,
 	theme: '@vuepress/blog',
 	themeConfig: {
-		modifyBlogPluginOptions(blogPlugnOptions) {
-			const writingDirectoryClassifier = {
-				id: 'writing',
-				dirname: '_writings',
-				path: '/writings/',
-				layout: 'IndexWriting',
-				itemLayout: 'Writing',
-				itemPermalink: '/writings/:year/:month/:day/:slug',
+		directories: [
+			{
+				id: 'post',
+				dirname: '_posts',
+				path: '/',
+				layout: 'IndexPost',
+				itemLayout: 'Post',
+				itemPermalink: '/:year/:month/:day/:slug',
 				pagination: {
 					perPagePosts: 5,
 				},
-			}
-			blogPlugnOptions.directories.push(writingDirectoryClassifier)
+			},
+		],
 
-			const archiveDirectoryClassifierIndex = blogPlugnOptions.directories.findIndex(d => d.id === 'archive')
-			blogPlugnOptions.directories.splice(archiveDirectoryClassifierIndex, 1)
-
-			return blogPlugnOptions
-		},
+		frontmatters: [
+			{
+				id: "tag",
+				keys: ['tag', 'tags'],
+				path: '/tag/',
+				layout: 'Tags',
+				frontmatter: { title: 'Tags' },
+				itemlayout: 'Tag',
+				pagination: {
+					perPagePosts: 5
+				}
+			},
+		],
 
 		summaryLength: 100,
 
