@@ -1,8 +1,8 @@
 ---
-date: 2019-6-16
+date: 2017-11-01
 tags: JavaScript
 author: 葵花养殖技术人员
-location: Beijing
+location: Chengdu
 ---
 
 # 我的第一个JavaScript程序：贪吃蛇

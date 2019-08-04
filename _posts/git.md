@@ -1,8 +1,8 @@
 ---
-date: 2019-6-16
+date: 2018-04-21
 tags: 其它
 author: 葵花养殖技术人员
-location: Beijing
+location: Chengdu
 ---
 
 # Git命令大全

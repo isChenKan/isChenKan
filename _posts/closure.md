@@ -1,8 +1,8 @@
 ---
-date: 2019-6-16
+date: 2018-11-03
 tags: JavaScript
 author: 葵花养殖技术人员
-location: Beijing
+location: Chongqing
 ---
 
 # JS基础之：什么是闭包？

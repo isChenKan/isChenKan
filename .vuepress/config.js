@@ -2,19 +2,6 @@ module.exports = {
 	title: `🌻葵花养殖技术人员`,
 	theme: '@vuepress/blog',
 	themeConfig: {
-		directories: [
-			{
-				id: 'post',
-				dirname: '_posts',
-				path: '/',
-				layout: 'IndexPost',
-				itemLayout: 'Post',
-				itemPermalink: '/:year/:month/:day/:slug',
-				pagination: {
-					lengthPerPage: 5,
-				},
-			},
-		],
 		frontmatters: [
 			{
 				id: "tag",
@@ -37,10 +24,6 @@ module.exports = {
 				text: '标签',
 				link: '/tag/',
 			},
-			// {
-			// 	text: 'About',
-			// 	link: '/me/',
-			// },
 			{
 				text: 'Github',
 				link: 'https://github.com/ischenkan/',
@@ -56,7 +39,7 @@ module.exports = {
 			copyright: [
 				{
 					text: 'Create by 🌻葵花养殖技术人员',
-					link: '',
+					link: 'https://kuifafa.com',
 				},
 			],
 		},

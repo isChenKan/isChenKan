@@ -1,8 +1,8 @@
 ---
-date: 2019-6-16
+date: 2018-10-29
 tags: JavaScript
 author: 葵花养殖技术人员
-location: Beijing
+location: Chongqing
 ---
 
 # 几种排序算法的JavaScript实现
