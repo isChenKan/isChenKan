@@ -124,7 +124,7 @@ output: {
   path: path.resolve(__dirname, 'dist')
 }
 ```
-将第三方库缓存到`vendors.a42c3ca0d742766d7a28.js`（中间是hash值）中.因为它们不常变化，所以我们不想在代码更改的时候，这个hash也跟着变。配置：
+将第三方库缓存到`vendors.a42c3ca0d742766d7a28.js`（中间是hash值）中。因为它们不常变化，所以我们不想在代码更改的时候，这个hash也跟着变。配置：
 ```js
 // webpack.config.js:
 optimization: {
