@@ -96,20 +96,33 @@ git push -f https://${token}@github.com/<USERNAME>/<USERNAME>.github.io.git mast
 ```bash
 git update-index --add --chmod=+x deploy.sh
 ```
-要不然你的travis后台会报错，（没权限）。每次都要执行这个命令！
+要不然你的travis后台会报错，（没权限）。`.travis.yml`配置:
+```yml
+language: node_js
+node_js:
+  - "8.15.1"
+
+before_install:
+  - chmod +x deploy.sh
+
+cache:
+  directories:
+    - "node_modules"
+  
+branch: master
+
+script:
+  - ./deploy.sh
+
+  
+```
 
 ![An image](./images/fail.png)
 
 ---
-最后再push你的代码就可以了，tranvis就会自动执行部署了。这里注意要强制push，以为它编译之后的仓库跟你本地的不一样了，直接`git push`是不行的，每次强制push就好了：
+最后再push你的代码就可以了，travis就会自动执行部署了。这里注意要强制push，以为它编译之后的仓库跟你本地的不一样了，直接`git push`是不行的，每次强制push就好了：
 ```bash
 git push origin master --force
 ```
-#### 总结一下每次更新的步骤：
-```bash
-git add .
-git update-index --add --chmod=+x deploy.sh
-git commit -m ":tada: update"
-git push origin master --force
-```
+
 等travis后台完成之后，就可以在你的域名上面看到你的文档咯！🎉
