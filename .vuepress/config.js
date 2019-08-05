@@ -1,6 +1,7 @@
 module.exports = {
 	title: `🌻葵花养殖技术人员`,
 	theme: '@vuepress/blog',
+	ga: 'UA-145160931-1',
 	themeConfig: {
 		frontmatters: [
 			{
