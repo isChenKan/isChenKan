@@ -109,7 +109,9 @@ cache:
   directories:
     - "node_modules"
   
-branch: master
+branches:
+  only:
+  - master
 
 script:
   - ./deploy.sh
