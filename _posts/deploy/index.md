@@ -98,7 +98,7 @@ git update-index --add --chmod=+x deploy.sh
 ```
 要不然你的travis后台会报错，（没权限）。`.travis.yml`配置:
 ```yml
-language: node_js
+	language: node_js
 node_js:
   - "8.15.1"
 
@@ -109,7 +109,9 @@ cache:
   directories:
     - "node_modules"
   
-branch: master
+branches:
+  only:
+  - master
 
 script:
   - ./deploy.sh
