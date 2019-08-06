@@ -33,6 +33,10 @@ module.exports = {
 				link: '/tag/',
 			},
 			{
+				text: '汪汪',
+				link: '/fafa/',
+			},
+			{
 				text: 'Github',
 				link: 'https://github.com/ischenkan/',
 			},
