@@ -111,7 +111,7 @@ cache:
   
 branches:
   only:
-  - master
+  - dev
 
 script:
   - ./deploy.sh
