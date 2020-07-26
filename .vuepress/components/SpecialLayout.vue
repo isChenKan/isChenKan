@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <div class="home-description"> 
-      <div>这里是葵花养殖技术人员的技术博客，因为女朋友喜欢葵花，所以我就叫葵花养殖技术人员啦！🌻</div>
+      <div>这里是社长的社畜的技术博客，因为女朋友喜欢葵花，所以我就叫社长的社畜啦！🌻</div>
       <div>有需要交流的地方你可以'Contact'发个邮件给我^ ^</div>
       <div
         class="home-btn"

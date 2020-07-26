@@ -1,5 +1,5 @@
 module.exports = {
-	title: `🌻葵花养殖技术人员`,
+	title: `🤯社长の前端笔记本`,
 	theme: '@vuepress/blog',
 	plugins: [
 		[
@@ -10,6 +10,7 @@ module.exports = {
 		]
 	],
 	themeConfig: {
+		smoothScroll: true,
 		frontmatters: [
 			{
 				id: "tag",
@@ -32,24 +33,26 @@ module.exports = {
 				text: '标签',
 				link: '/tag/',
 			},
-			{
-				text: 'Github',
-				link: 'https://github.com/ischenkan/',
-			},
 		],
 		footer: {
 			contact: [
 				{
-					type: 'github',
-					link: 'https://github.com/ischenkan',
+					type: 'mail',
+					link: 'mailto: ischenkan@outlook.com',
 				},
 			],
 			copyright: [
 				{
-					text: 'Create by 🌻葵花养殖技术人员',
+					text: 'Create by 🌻社长的社畜',
 					link: 'https://kuifafa.com',
 				},
 			],
 		},
+		globalPagination: {
+			prevText: '上一页', // Text for previous links.
+			nextText: '下一页', // Text for next links.
+			lengthPerPage: '10', // Maximum number of posts per page.
+			layout: 'Pagination', // Layout for pagination page
+		}
 	},
 }

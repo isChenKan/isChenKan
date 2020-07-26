@@ -1,12 +1,11 @@
 ---
 date: 2019-07-22
 tags: JavaScript
-author: 葵花养殖技术人员
-location: Beijing
+author: 社长的社畜
+location: 北京
 ---
 
 # 学习npm包源码
-> 每周都会看三个npm包的源码来学习一下。
 
 ## 1.关于n--和--n
 ```js

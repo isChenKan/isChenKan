@@ -1,8 +1,8 @@
 ---
 date: 2019-03-18
 tags: JavaScript
-author: 葵花养殖技术人员
-location: Chongqing
+author: 社长的社畜
+location: 重庆
 ---
 
 # 日常开发问题总结（待续）

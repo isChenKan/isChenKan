@@ -1,8 +1,8 @@
 ---
 date: 2019-08-04
 tags: Webpack
-author: 葵花养殖技术人员
-location: Beijing
+author: 社长的社畜
+location: 北京
 ---
 
 # Webpack官网配置指南

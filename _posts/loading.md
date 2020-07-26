@@ -1,8 +1,8 @@
 ---
 date: 2017-08-20
 tags: CSS
-author: 葵花养殖技术人员
-location: Chengdu
+author: 社长的社畜
+location: 成都
 ---
 
 # Google的加载动画（SVG）

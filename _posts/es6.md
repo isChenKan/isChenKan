@@ -1,8 +1,8 @@
 ---
 date: 2018-12-02
 tags: JavaScript
-author: 葵花养殖技术人员
-location: Chongqing
+author: 社长的社畜
+location: 重庆
 ---
 
 # JS基础之：ES6总结

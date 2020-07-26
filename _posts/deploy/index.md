@@ -1,8 +1,8 @@
 ---
 date: 2019-07-02
 tags: 其它
-author: 葵花养殖技术人员
-location: Beijing
+author: 社长的社畜
+location: 北京
 ---
 
 # Travis自动化部署VuePress到Github Pages
@@ -37,7 +37,7 @@ npx vuepress dev docs
 值得一提的是，默认没有favicon（就是浏览器窗口的那个小图标）和PWA支持，你需要在config.js里面配置`serviceWorker: true`来开启PWA，另外注意一下`base`字段的配置：
 ```js
 module.exports = {
-	title: '🌻葵花养殖技术人员',
+	title: '🌻社长的社畜',
 	description: '前端技术博客',
 	base: '/', // 设置站点根路径
 	themeConfig: {

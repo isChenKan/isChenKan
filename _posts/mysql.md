@@ -1,8 +1,8 @@
 ---
 date: 2018-01-19
 tags: 其它
-author: 葵花养殖技术人员
-location: Chengdu
+author: 社长的社畜
+location: 成都
 ---
 
 # MySQL基础命令
@@ -241,8 +241,8 @@ cust_city,
 cust_address)
 values('alex',
 NULL,
-'Beijing',
-'Beijing chaoyang');
+'北京',
+'北京 chaoyang');
 ```
 ## UPDATE
 ```SQL

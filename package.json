@@ -1,7 +1,7 @@
 {
   "name": "ischenkan",
   "version": "1.0.0",
-  "description": "--- 这里是葵花养殖技术人员用来写一些技术总结的地方，因为女朋友叫做葵花养殖系主任，所以我就叫葵花养殖技术人员啦！🙈",
+  "description": "--- 这里是社长的社畜用来写一些技术总结的地方，因为女朋友叫做葵花养殖系主任，所以我就叫社长的社畜啦！🙈",
   "scripts": {
     "dev": "vuepress dev .",
     "build": "vuepress build .",
@@ -18,14 +18,11 @@
   },
   "homepage": "https://github.com/isChenKan/isChenKan#readme",
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.2.4",
-    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "@vuepress/theme-blog": "^1.2.3",
-    "axios": "^0.19.0",
-    "vuepress": "^1.0.3"
+    "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.5.2",
+    "@vuepress/theme-blog": "^2.3.0",
+    "axios": "^0.19.2",
+    "vuepress": "^1.5.2"
   },
-  "dependencies": {
-    "leancloud-storage": "^3.14.1",
-    "valine": "^1.3.9"
-  }
+  "dependencies": {}
 }

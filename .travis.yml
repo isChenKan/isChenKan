@@ -9,7 +9,9 @@ cache:
   directories:
     - "node_modules"
   
-branch: master
+branches:
+  only:
+  - dev
 
 script:
   - ./deploy.sh

@@ -1,8 +1,8 @@
 ---
 date: 2019-01-10
 tags: JavaScript
-author: 葵花养殖技术人员
-location: Chongqing
+author: 社长的社畜
+location: 重庆
 ---
 
 # JS基础之：callback和promise

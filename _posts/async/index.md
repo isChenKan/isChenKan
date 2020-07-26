@@ -1,8 +1,8 @@
 ---
 date: 2019-07-10
 tags: Node.js
-author: 葵花养殖技术人员
-location: Beijing
+author: 社长的社畜
+location: 北京
 ---
 
 # Node的异步I/O

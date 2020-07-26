@@ -1,8 +1,8 @@
 ---
 date: 2017-12-28
 tags: Node.js
-author: 葵花养殖技术人员
-location: Chengdu
+author: 社长的社畜
+location: 成都
 ---
 
 # 使用nvm进行Node版本控制
