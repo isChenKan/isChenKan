@@ -1,6 +1,6 @@
 ---
 date: 2018-01-19
-tags: 其它
+tags: 其他
 author: 社长的社畜
 location: 成都
 ---

@@ -1,11 +1,11 @@
 ---
-date: 2019-07-22
+date: 2019-07-10
 tags: JavaScript
 author: 社长的社畜
 location: 北京
 ---
 
-# 学习npm包源码
+# 一些npm包源码笔记
 
 ## 1.关于n--和--n
 ```js

@@ -1,11 +1,11 @@
 ---
-date: 2020-03-04
-tags: Javascript
+date: 2020-02-04
+tags: JavaScript
 author: 社长的社畜
 location: 北京
 ---
 
-# 重学《JvaScript高级程序设计》-语法细节
+# 重学《JavaScript高级程序设计》-核心语法
 
 ## 数据类型
 JavaScript原始数据类型(primitive)6个：Undefined, Null, Boolean, Number, String, Symbol。复杂数据类型1个：Object。

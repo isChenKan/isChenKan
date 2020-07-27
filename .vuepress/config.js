@@ -1,5 +1,5 @@
 module.exports = {
-	title: `🤯社长の前端笔记本`,
+	title: `🤯社长の社畜`,
 	theme: '@vuepress/blog',
 	plugins: [
 		[
@@ -43,7 +43,7 @@ module.exports = {
 			],
 			copyright: [
 				{
-					text: 'Create by 🌻社长的社畜',
+					text: 'Create by 🐱社长的社畜',
 					link: 'https://kuifafa.com',
 				},
 			],
