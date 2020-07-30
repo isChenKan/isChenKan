@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一些npm包源码笔记 | 🤯社长の社畜</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="
+1.关于n--和--n
+var n = 3
+while(n--) {
+	console.log(n)
+}
+// value of (n--) is 3，所以一共循环了三次
+// 2 1 0
+
+var n = 3
+while(--n) {
+	console.log(n)
+}
+// 相当于while(n = n - 1）
+// value of (n = n - 1) is 2 ...">
+    <link rel="preload" href="/assets/css/0.styles.fda92607.css" as="style"><link rel="preload" href="/assets/js/app.7f4b4882.js" as="script"><link rel="preload" href="/assets/js/8.4ab95c53.js" as="script"><link rel="preload" href="/assets/js/3.fadb76cf.js" as="script"><link rel="preload" href="/assets/js/29.e9f41ef1.js" as="script"><link rel="prefetch" href="/assets/js/10.b2dc55ce.js"><link rel="prefetch" href="/assets/js/11.3a9e0bd4.js"><link rel="prefetch" href="/assets/js/12.7d472947.js"><link rel="prefetch" href="/assets/js/13.aa16d6c6.js"><link rel="prefetch" href="/assets/js/14.37208588.js"><link rel="prefetch" href="/assets/js/15.259fb6c8.js"><link rel="prefetch" href="/assets/js/16.6f1ef36b.js"><link rel="prefetch" href="/assets/js/17.5af21d96.js"><link rel="prefetch" href="/assets/js/18.6b7bd99c.js"><link rel="prefetch" href="/assets/js/19.c826f71e.js"><link rel="prefetch" href="/assets/js/20.d22504b7.js"><link rel="prefetch" href="/assets/js/21.55d5ab5c.js"><link rel="prefetch" href="/assets/js/22.a753f0b7.js"><link rel="prefetch" href="/assets/js/23.699657ef.js"><link rel="prefetch" href="/assets/js/24.b4c49572.js"><link rel="prefetch" href="/assets/js/25.3e4f7af1.js"><link rel="prefetch" href="/assets/js/26.1673bdbd.js"><link rel="prefetch" href="/assets/js/27.f2e3a149.js"><link rel="prefetch" href="/assets/js/28.683f14bc.js"><link rel="prefetch" href="/assets/js/30.1ad33a67.js"><link rel="prefetch" href="/assets/js/31.658218fc.js"><link rel="prefetch" href="/assets/js/32.2894414b.js"><link rel="prefetch" href="/assets/js/33.0ec3aa48.js"><link rel="prefetch" href="/assets/js/34.ed8c5abe.js"><link rel="prefetch" href="/assets/js/35.71e0d56d.js"><link rel="prefetch" href="/assets/js/36.66106bb5.js"><link rel="prefetch" href="/assets/js/4.3792b2f6.js"><link rel="prefetch" href="/assets/js/5.57997a9e.js"><link rel="prefetch" href="/assets/js/6.2f06e37f.js"><link rel="prefetch" href="/assets/js/7.dad84601.js"><link rel="prefetch" href="/assets/js/9.929f25d0.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.9c3680bd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fda92607.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">🤯社长の社畜 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">文章</a></li><li class="nav-item"><a href="/tag/" class="nav-link">标签</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">🤯社长の社畜 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">文章</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">标签</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">社长的社畜</span> <span itemprop="address">   in 北京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2019-07-10T00:00:00.000Z">
+      Wed Jul 10 2019
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/tag/JavaScript" data-v-42ccfcd5><span data-v-42ccfcd5>JavaScript</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h1 id="一些npm包源码笔记"><a href="#一些npm包源码笔记" class="header-anchor">#</a> 一些npm包源码笔记</h1> <h2 id="_1-关于n-和-n"><a href="#_1-关于n-和-n" class="header-anchor">#</a> 1.关于n--和--n</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> 
+<span class="token punctuation">}</span>
+<span class="token comment">// value of (n--) is 3，所以一共循环了三次</span>
+<span class="token comment">// 2 1 0</span>
+
+<span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">--</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 相当于while(n = n - 1）</span>
+<span class="token comment">// value of (n = n - 1) is 2，所以一共只循环了两次</span>
+<span class="token comment">// 2 1</span>
+</code></pre></div><h2 id="_2-运算法和-运算符"><a href="#_2-运算法和-运算符" class="header-anchor">#</a> 2.+运算法和|运算符</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token string">&quot;3&quot;</span>
+<span class="token operator">+</span>num  <span class="token comment">// 3</span>
+<span class="token function">Number</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>  <span class="token comment">// 3</span>
+</code></pre></div><p><a href="https://github.com/mattdesl/array-range/blob/master/index.js" target="_blank" rel="noopener noreferrer">Github: array-range<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+为什么有a = a | 0 ？</p> <p>|是按位或运算，转化为二进制，有1则该位为1。
+用var a = a | 0，如果a是二进制或者八进制、十六进制，就可以转换成十进制。其实Number('0b11')也是一样的效果。</p> <ul><li>二进制表示：0b11  // 3</li> <li>八进制表示：0o11  // 9</li> <li>十六进制表示：0x11  // 17</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">25</span> <span class="token operator">|</span> <span class="token number">3</span>  <span class="token comment">// 27</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">0b11</span>  <span class="token comment">// 二进制的3</span>
+<span class="token keyword">typeof</span> a  <span class="token comment">// &quot;number&quot;</span>
+a <span class="token operator">=</span> a <span class="token operator">|</span> <span class="token number">0</span>  <span class="token comment">// 3</span>
+</code></pre></div><p>还能将小数去掉：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1.1</span> <span class="token operator">|</span> <span class="token number">0</span>  <span class="token comment">// 1</span>
+</code></pre></div><h2 id="_3-去重"><a href="#_3-去重" class="header-anchor">#</a> 3.去重</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//去重，一般的做法是两个循环，复杂度高，可以利用对象：</span>
+<span class="token keyword">function</span> <span class="token function">dedupe</span> <span class="token punctuation">(</span><span class="token parameter">client<span class="token punctuation">,</span> hasher</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 如果是普通的数组，就用每一项的值作为键（字符串），比如[1, 2, 3]，键就会是：</span>
+  <span class="token comment">// JSON.stringify(1)</span>
+  <span class="token comment">// &quot;1&quot;</span>
+    hasher <span class="token operator">=</span> hasher <span class="token operator">||</span> <span class="token constant">JSON</span><span class="token punctuation">.</span>stringify
+    <span class="token keyword">const</span> clone <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">const</span> lookup <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> client<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> elem <span class="token operator">=</span> client<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">let</span> hashed <span class="token operator">=</span> <span class="token function">hasher</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>lookup<span class="token punctuation">[</span>hashed<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            clone<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span>
+            lookup<span class="token punctuation">[</span>hashed<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> clone
+<span class="token punctuation">}</span>
+<span class="token comment">//可以自己提供一个函数作为参数：</span>
+<span class="token keyword">var</span> aaa <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>a<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token keyword">var</span> bbb <span class="token operator">=</span> <span class="token function">dedupe</span><span class="token punctuation">(</span>aaa<span class="token punctuation">,</span> <span class="token parameter">value</span> <span class="token operator">=&gt;</span> value<span class="token punctuation">.</span>a<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bbb<span class="token punctuation">)</span>
+<span class="token comment">// result: [{a: 2, b: 1}, {a: 1,b: 2}]</span>
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#_1-关于n-和-n" title="1.关于n--和--n">1.关于n--和--n</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#_2-运算法和-运算符" title="2.+运算法和|运算符">2.+运算法和|运算符</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#_3-去重" title="3.去重">3.去重</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="mailto: ischenkan@outlook.com" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" data-v-fdbf4940><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-v-fdbf4940></path><polyline points="22,6 12,13 2,6" data-v-fdbf4940></polyline></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://kuifafa.com" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>Create by 🐱社长的社畜</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7f4b4882.js" defer></script><script src="/assets/js/8.4ab95c53.js" defer></script><script src="/assets/js/3.fadb76cf.js" defer></script><script src="/assets/js/29.e9f41ef1.js" defer></script>
+  </body>
+</html>

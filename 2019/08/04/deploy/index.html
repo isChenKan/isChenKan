@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Travis自动化部署VuePress到Github Pages | 🤯社长の社畜</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="本文旨在帮助你用vuepress构建自己的博客或者文档，然后让它运行在免费的Github Pages上面，并且通过Travis这个集成工具来在你每次git push代码的时候自动部署。这样你每次push完等一会儿就可以在线上看到刚刚写好的文档啦！体验还是很不错的～😎
+
+第一步：Vuepress
+首先你需要参考[vuepress](https://vuepress.vuejs.org/ ...">
+    <link rel="preload" href="/assets/css/0.styles.fda92607.css" as="style"><link rel="preload" href="/assets/js/app.7f4b4882.js" as="script"><link rel="preload" href="/assets/js/8.4ab95c53.js" as="script"><link rel="preload" href="/assets/js/3.fadb76cf.js" as="script"><link rel="preload" href="/assets/js/12.7d472947.js" as="script"><link rel="prefetch" href="/assets/js/10.b2dc55ce.js"><link rel="prefetch" href="/assets/js/11.3a9e0bd4.js"><link rel="prefetch" href="/assets/js/13.aa16d6c6.js"><link rel="prefetch" href="/assets/js/14.37208588.js"><link rel="prefetch" href="/assets/js/15.259fb6c8.js"><link rel="prefetch" href="/assets/js/16.6f1ef36b.js"><link rel="prefetch" href="/assets/js/17.5af21d96.js"><link rel="prefetch" href="/assets/js/18.6b7bd99c.js"><link rel="prefetch" href="/assets/js/19.c826f71e.js"><link rel="prefetch" href="/assets/js/20.d22504b7.js"><link rel="prefetch" href="/assets/js/21.55d5ab5c.js"><link rel="prefetch" href="/assets/js/22.a753f0b7.js"><link rel="prefetch" href="/assets/js/23.699657ef.js"><link rel="prefetch" href="/assets/js/24.b4c49572.js"><link rel="prefetch" href="/assets/js/25.3e4f7af1.js"><link rel="prefetch" href="/assets/js/26.1673bdbd.js"><link rel="prefetch" href="/assets/js/27.f2e3a149.js"><link rel="prefetch" href="/assets/js/28.683f14bc.js"><link rel="prefetch" href="/assets/js/29.e9f41ef1.js"><link rel="prefetch" href="/assets/js/30.1ad33a67.js"><link rel="prefetch" href="/assets/js/31.658218fc.js"><link rel="prefetch" href="/assets/js/32.2894414b.js"><link rel="prefetch" href="/assets/js/33.0ec3aa48.js"><link rel="prefetch" href="/assets/js/34.ed8c5abe.js"><link rel="prefetch" href="/assets/js/35.71e0d56d.js"><link rel="prefetch" href="/assets/js/36.66106bb5.js"><link rel="prefetch" href="/assets/js/4.3792b2f6.js"><link rel="prefetch" href="/assets/js/5.57997a9e.js"><link rel="prefetch" href="/assets/js/6.2f06e37f.js"><link rel="prefetch" href="/assets/js/7.dad84601.js"><link rel="prefetch" href="/assets/js/9.929f25d0.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.9c3680bd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fda92607.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">🤯社长の社畜 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">文章</a></li><li class="nav-item"><a href="/tag/" class="nav-link">标签</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">🤯社长の社畜 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">文章</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">标签</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">社长的社畜</span> <span itemprop="address">   in 北京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2019-08-04T00:00:00.000Z">
+      Sun Aug 04 2019
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/tag/工程" data-v-42ccfcd5><span data-v-42ccfcd5>工程</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h1 id="travis自动化部署vuepress到github-pages"><a href="#travis自动化部署vuepress到github-pages" class="header-anchor">#</a> Travis自动化部署VuePress到Github Pages</h1> <blockquote><p>本文旨在帮助你用vuepress构建自己的博客或者文档，然后让它运行在免费的Github Pages上面，并且通过Travis这个集成工具来在你每次git push代码的时候自动部署。这样你每次push完等一会儿就可以在线上看到刚刚写好的文档啦！体验还是很不错的～😎</p></blockquote> <h2 id="第一步：vuepress"><a href="#第一步：vuepress" class="header-anchor">#</a> 第一步：Vuepress</h2> <p>首先你需要参考<a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">vuepress<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的官网文档，写一个vuepress的项目。注意，如果你选择官网文档快速上手部分写的第一种方式（全局安装体验）的话，那么你需要在你的新项目中写一个<code>package.json</code>，并执行以下几步：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 将 VuePress 作为一个本地依赖安装</span>
+<span class="token function">yarn</span> <span class="token function">add</span> -D vuepress <span class="token comment"># 或者：npm install -D vuepress</span>
+
+<span class="token comment"># 新建一个 docs 文件夹</span>
+<span class="token function">mkdir</span> docs
+
+<span class="token comment"># 新建一个 markdown 文件</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress!'</span> <span class="token operator">&gt;</span> docs/README.md
+
+<span class="token comment"># 开始写作</span>
+npx vuepress dev docs
+</code></pre></div><p>然后你的<code>package.json</code>里的<code>scripts</code>应该是这样的：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后通过<code>npm run docs:dev</code>和<code>npm run docs:build</code>来在本地运行和构建。具体怎么在vuepress中配置markdown文档，导航菜单什么的，官方文档很详细了，甚至还可以自己开发布局，样式和交互。这里就不赘述了。我准备有空的时候用vuetify去写一个material的vuepress主题。到时候开源出来大家用。不过其实默认主题也还可以啦。</p> <p>值得一提的是，默认没有favicon（就是浏览器窗口的那个小图标）和PWA支持，你需要在config.js里面配置<code>serviceWorker: true</code>来开启PWA，另外注意一下<code>base</code>字段的配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	title<span class="token operator">:</span> <span class="token string">'🌻社长的社畜'</span><span class="token punctuation">,</span>
+	description<span class="token operator">:</span> <span class="token string">'前端技术博客'</span><span class="token punctuation">,</span>
+	base<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 设置站点根路径</span>
+	themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+		sidebar<span class="token operator">:</span> <span class="token punctuation">[</span>
+			<span class="token string">'/'</span><span class="token punctuation">,</span>
+		<span class="token punctuation">]</span><span class="token punctuation">,</span>
+		sidebarDepth<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	head<span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/icon.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'apple-touch-icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/apple-touch-icon.png'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="第二步：github-pages"><a href="#第二步：github-pages" class="header-anchor">#</a> 第二步：GitHub Pages</h2> <p>GitHub Pages可以让你用<code>https://&lt;用户名&gt;.github.io</code>这个域名来部署你刚刚在本地跑起来的vuepress文档。（当然也可以用）<code>https://&lt;用户名&gt;.github.io/&lt;仓库名&gt;</code>。这里跟上面配置里的<code>base</code>字段有关，第一种就用<code>'/'</code>就好了，第二种要用你的仓库名。如果你想将你的网站部署到 <code>https://foo.github.io/bar/</code>，那么<code>base</code>应该被设置成<code>&quot;/bar/&quot;</code>，它的值应当总是以斜杠开始，并以斜杠结束。</p> <p>用第一种方式的话，你的github仓库名必须叫做：<code>&lt;用户名&gt;.github.io</code>，如果用第二种域名的话，就随意就好。先别急着push本地的代码上去。现在，在项目的根目录新建一个deploy.sh文件。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token comment"># 如果是发布到自定义域名</span>
+<span class="token comment"># echo 'www.example.com' &gt; CNAME</span>
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io，去掉下面这一行的注释</span>
+<span class="token comment">#git push -f https://${token}@github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;，去掉下面这一行的注释</span>
+<span class="token comment"># git push -f https://${token}@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token builtin class-name">cd</span> -
+</code></pre></div><h2 id="第三步：travis"><a href="#第三步：travis" class="header-anchor">#</a> 第三步：Travis</h2> <p>最后一步，我们要用<a href="https://travis-ci.com/" target="_blank" rel="noopener noreferrer">travis<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>来部署我们的项目，简单来说，它会检测你的github仓库的变化，发现你push了新的代码上去，它就会自动执行刚才<code>deploy.sh</code>里的代码，然后部署你的项目上线。你可以注册登陆，并根据指示关联你的GitHub仓库，一切都默认就好，关联好了之后，由于travis没有权限操作GitHub，所以你需要去<a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">GitHub设置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>里面生成一个你的Personal access tokens，这里会让你给你的token起一个名字，注意到上面<code>deploy.sh</code>里面的这一行了吗：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> push -f https://<span class="token variable">${token}</span>@github.com/<span class="token operator">&lt;</span>USERNAME<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>USERNAME<span class="token operator">&gt;</span>.github.io.git master
+</code></pre></div><p>这里面这个<code>${token}</code>的名字就是那个，然后新建token的时候下面的勾记得全都要勾上，默认都是没有选的。然后就会生成token，记得马上复制它，然后去到travis里面，应该可以看到你的github仓库名字，点进去，选择旁边的设置，然后下面有一个Environment Variables，配置好你刚才复制的token就可以了，注意name是你刚刚起的token名字，然后Add就可以了：</p> <p><img src="/assets/img/travis.33934c8c.png" alt="An image">
+然后，你需要在命令行运行：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> update-index --add --chmod<span class="token operator">=</span>+x deploy.sh
+</code></pre></div><p>要不然你的travis后台会报错，（没权限）。<code>.travis.yml</code>配置:</p> <div class="language-yml extra-class"><pre class="language-yml"><code>	<span class="token key atrule">language</span><span class="token punctuation">:</span> node_js
+<span class="token key atrule">node_js</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token string">&quot;8.15.1&quot;</span>
+
+<span class="token key atrule">before_install</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> chmod +x deploy.sh
+
+<span class="token key atrule">cache</span><span class="token punctuation">:</span>
+  <span class="token key atrule">directories</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token string">&quot;node_modules&quot;</span>
+  
+<span class="token key atrule">branches</span><span class="token punctuation">:</span>
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> master
+
+<span class="token key atrule">script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> ./deploy.sh
+
+  
+</code></pre></div><p><img src="/assets/img/fail.2e4891e7.png" alt="An image"></p> <hr> <p>最后再push你的代码就可以了，travis就会自动执行部署了。这里注意要强制push，以为它编译之后的仓库跟你本地的不一样了，直接<code>git push</code>是不行的，每次强制push就好了：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> push origin master --force
+</code></pre></div><p>等travis后台完成之后，就可以在你的域名上面看到你的文档咯！🎉</p></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#第一步：vuepress" title="第一步：Vuepress">第一步：Vuepress</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#第二步：github-pages" title="第二步：GitHub Pages">第二步：GitHub Pages</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#第三步：travis" title="第三步：Travis">第三步：Travis</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="mailto: ischenkan@outlook.com" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" data-v-fdbf4940><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-v-fdbf4940></path><polyline points="22,6 12,13 2,6" data-v-fdbf4940></polyline></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://kuifafa.com" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>Create by 🐱社长的社畜</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7f4b4882.js" defer></script><script src="/assets/js/8.4ab95c53.js" defer></script><script src="/assets/js/3.fadb76cf.js" defer></script><script src="/assets/js/12.7d472947.js" defer></script>
+  </body>
+</html>
